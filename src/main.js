@@ -65,5 +65,3 @@ async function getTrendingMoviesPreview () {
     
         }
 
-    getTrendingMoviesPreview();
-    getCategoriesPreview();

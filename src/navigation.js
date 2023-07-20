@@ -16,7 +16,8 @@ function navigator(){
 }
 
 function homePage(){
-    console.log("Home!!")
+    getTrendingMoviesPreview();
+    getCategoriesPreview();
 }
 
 function trendsPage(){
