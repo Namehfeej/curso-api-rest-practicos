@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/app.css"
 </head>
+
 <body>
     <header id="header" class="header-container">
         <span class="header-arrow inactive">&lt;</span>
@@ -16,10 +17,11 @@
         <h1 class="header-title header-title--categoryView inactive">Acción</h1>
         <form id="searchForm" class="header-searchForm">
         <input type="text" placeholder="Vengadores" />
-        <button>🔍</button>
+        <button id="searchBtn">🔍</button>
         </form>
-        </header>
-        <section id="trendingPreview" class="trendingPreview-container">
+    </header>
+
+    <section id="trendingPreview" class="trendingPreview-container">
         <div class="trendingPreview-header">
         <h2 class="trendingPreview-title">Tendencias</h2>
         <button class="trendingPreview-btn">Ver más</button>
@@ -36,8 +38,8 @@
 -->   
 
         </article>
-        </section>
-        <section id="categoriesPreview" class="categoriesPreview-container">
+    </section>
+    <section id="categoriesPreview" class="categoriesPreview-container">
         <h2 class="categoriesPreview-title">Categorías</h2>
         <article class="categoriesPreview-list">
         <div class="category-container">
@@ -50,8 +52,8 @@
         <h3 id="id14" class="category-title">Acción</h3>
         </div>
         </article>
-        </section>
-        <section id="genericList" class="genericList-container inactive">
+    </section>
+    <section id="genericList" class="genericList-container inactive">
         <div class="movie-container">
         <img
                 src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -73,8 +75,8 @@
                 alt="Nombre de la película"
               />
         </div>
-        </section>
-        <section id="movieDetail" class="movieDetail-container inactive">
+    </section>
+    <section id="movieDetail" class="movieDetail-container inactive">
         <h1 class="movieDetail-title">Deadpool</h1>
         <span class="movieDetail-score">7.6</span>
         <p class="movieDetail-description">
@@ -114,12 +116,13 @@
         </div>
         </div>
         </article>
-        </section>
+    </section>
         <footer>Hecho con amor en Platzi por @Namehfeej</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/secrets.js"></script>
+    <script src="./src/node.js"></script>
     <script src="./src/main.js"></script>
     <script src="./src/navigation.js"></script>
 </body>
