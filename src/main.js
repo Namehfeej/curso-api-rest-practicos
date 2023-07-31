@@ -33,6 +33,8 @@ function likeMovie(movie) {
     }
 
     localStorage.setItem('liked_movies', JSON.stringify(likedMovies));
+    getTrendingMoviesPreview();
+    getLikedMovies();
 }
 
 const lazyLoader =  new IntersectionObserver ((entries) => {
@@ -86,7 +88,7 @@ function createMovies(
         movieBtn.addEventListener('click', () => {
             movieBtn.classList.toggle('movie-btn--liked');
       // DEBERIAMOS AGREGAR LA PELICULA A LS
-            likeMovie();
+            likeMovie(movie);
       });
 
    
